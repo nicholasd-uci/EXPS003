@@ -22,22 +22,31 @@ app.use(express.json())
     // GET all items
 // we would then use Postman to get the responses and no need for a front end! 
 app.get('/items', (req, res) => {
-
+    res.json(items)
 })
 
     // POST one item
 app.post('/items', (req, res) => {
-    
+    items.push(req.body)
+    res.sendStatus(200)
 })
 
     // PUT one item
 app.put('/items/:text', (req, res) => {
-    
+    // console.log(req.params.text)
+    // console.log(req.body)
+    for (let i = 0; i < items.length; i++) {
+        if (item[i].text === req.params.text){
+            item[i].isDone = req.body.isDone
+        }
+    }
+    res.sendStatus(200)
 })
 
     // DELETE one item
 app.delete('/items/:text', (req, res) => {
-    
+    items = items.filter(item => item.text != req.params.text)
+    res.sendStatus(200)
 })
 
 app.listen(3000)
