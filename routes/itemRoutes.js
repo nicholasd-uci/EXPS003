@@ -1,4 +1,5 @@
 // we are building the pieces seperate and connecting them later on
+        // item Routes is === API routes
 
 // 2nd part
 const router = require('express').router()
@@ -11,7 +12,7 @@ let item = []
     // GET all items
 // we would then use Postman to get the responses and no need for a front end! 
 rounter.get('/items', (req, res) => {
-    fs.readFile(join(__dir, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
         if (err) { console.log(err) }
         res.json(data.toUpperCase(data))
     })
@@ -20,7 +21,7 @@ rounter.get('/items', (req, res) => {
 
     // POST one item
 rounter.post('/items', (req, res) => {
-    fs.readFile(join(__dir, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
         if (err) { console.log(err) }
 
         let items = JSON.parse(data)

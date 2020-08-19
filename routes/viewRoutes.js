@@ -1,3 +1,5 @@
+// this would be considered the HTML
+
 const router = require('express').Router()
 const { join } = require('path')
 
