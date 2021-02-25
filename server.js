@@ -35,6 +35,9 @@ app.use(require('./routes'))
 // we just called this app.use from line 9 to link our text that we had here to now render here when its called upon! 
 // we moved this section to itemRoutes.js
 
+
+
+
 app.listen(3000)
 
 
