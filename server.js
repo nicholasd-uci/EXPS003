@@ -40,7 +40,8 @@ app.use(require('./routes'))
 
 app.listen(3000)
 
-
+// npm init -y
+// npm i express
 // npm i uuid
 // const uuid = require('uuid.v1')
 // id: uuid.v1()
