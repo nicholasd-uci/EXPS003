@@ -1,14 +1,15 @@
-// To Do List App //
 
-// Basic Boiler Plate
-// const express = require('express')
-// const app = express()
-// const { join } = require('path')
+// Server-Side Boiler Plate
+const express = require('express')
+const app = express()
+const { join } = require('path')
 
-// app.use(express.static(join(__dirname, 'public')))
-// app.use(express.urlencoded({ extended: true }))
-// app.use(express.json())
-// app.listen(3000)
+app.use(express.static(join(__dirname, 'public')))
+app.use(express.urlencoded({ extended: true }))
+
+app.use(express.json())
+
+app.listen(3000)
 
 
 const express = require('require')
