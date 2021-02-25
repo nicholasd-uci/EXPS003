@@ -1,23 +1,12 @@
-
-// Server-Side Boiler Plate
-const express = require('express')
-const app = express()
-const { join } = require('path')
-
-app.use(express.static(join(__dirname, 'public')))
-app.use(express.urlencoded({ extended: true }))
-
-app.use(express.json())
-
-app.listen(3000)
-
-
+// Express
 const express = require('require')
 
 // this will help your frontend view routing to render with 1 line of code
 // need a public folder
 // file inside of that needs to be index.html
 const { join } = require('path')
+
+// App
 const app = express()
 
 
@@ -36,13 +25,12 @@ app.use(require('./routes'))
 // we just called this app.use from line 9 to link our text that we had here to now render here when its called upon! 
 // we moved this section to itemRoutes.js
 
-
-
-
+// PORT
 app.listen(3000)
 
 // npm init -y
 // npm i express
+// nodemon
 // npm i uuid
 // const uuid = require('uuid.v1')
 // id: uuid.v1()
