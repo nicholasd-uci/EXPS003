@@ -19,16 +19,6 @@ app.use(require('./routes'))
 // PORT
 app.listen(3000)
 
-const express = require('express')
-const app = express()
-
-app.get('/name/:n', (req, res) => {
-    console.log(req.params.n)
-    res.send(`Hello ${req.params.n}!`)
-})
-
-app.listen(3000)
-
 // npm init -y
 // npm i express
 // nodemon
