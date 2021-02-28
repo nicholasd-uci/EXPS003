@@ -17,12 +17,17 @@
 
 ***Sever-Side Boiler Plate***
 
+- Once you have this typed out, you can always refer back to it.
+- Feel free to copy and paste from this repo
+- server.js in EXPS002 => [EXPS002 GitHub Repo](https://github.com/nicholasd-uci/EXPS002)
 
 ![server](./photos/serverBoilerPlate.png)
 
-- This 
+***Line By Line Details***
 
 ![boilerPlateDetails](./photos/boilerPlateDetails.png)
+
+
 
 ## Source Reference 
 
