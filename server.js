@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 // Sends/receives json data
 app.use(express.json())
 
-// we moved this section to itemRoutes.js
+// We then can link our routes as so
 app.use(require('./routes'))
 
 // PORT

@@ -9,7 +9,11 @@
     - Using Restful Routing Syntax
 ```
 
-##
+## Server Side Boiler Plate
+
+    ‣ DON"T BOTHER REMEMBERING THIS! 
+    ‣ Server-side boiler plate is just like an HTML boiler Plate
+    ‣ 
 
 ## Source Reference 
 
