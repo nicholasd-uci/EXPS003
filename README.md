@@ -13,7 +13,15 @@
 
     ‣ DON"T BOTHER REMEMBERING THIS! 
     ‣ Server-side boiler plate is just like an HTML boiler Plate
-    ‣ 
+    ‣ Certain parts of the boiler plate help you connect F.E. to B.E.
+
+***Sever-Side Boiler Plate***
+
+![serverBoilerPlate](./photos/serverBoilerPlate.png)
+
+- This 
+
+![boilerPlateDetails](./photos/boilerPlateDetails.png)
 
 ## Source Reference 
 
