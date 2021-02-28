@@ -21,12 +21,13 @@
 - Feel free to copy and paste from this repo
 - server.js in EXPS002 => [EXPS002 GitHub Repo](https://github.com/nicholasd-uci/EXPS002)
 
-![server](./photos/serverBoilerPlate.png)
+![serverBoilerPlate](./photo/serverBoilerPlate.png)
+
+
 
 ***Line By Line Details***
 
-![boilerPlateDetails](./photos/boilerPlateDetails.png)
-
+<!-- ![boilerPlateDetails](./photos/boilerPlateDetails.png) -->
 
 
 ## Source Reference 
