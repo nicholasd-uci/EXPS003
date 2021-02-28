@@ -17,7 +17,8 @@
 
 ***Sever-Side Boiler Plate***
 
-![serverBoilerPlate](./photos/serverBoilerPlate.png)
+
+![server](./photos/serverBoilerPlate.png)
 
 - This 
 
