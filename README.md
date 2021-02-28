@@ -25,6 +25,11 @@
 
 ![browserNamePt2](./photo/browserNamePt2.png)
 
+***Query Ex With Postman***
+
+![queryRequest](./Videos/queryRequest.gif)
+
+
 ***Example of a Param***
 
 ![params](./photo/params.png)
