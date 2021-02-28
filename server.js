@@ -18,10 +18,3 @@ app.use(require('./routes'))
 
 // PORT
 app.listen(3000)
-
-// npm init -y
-// npm i express
-// nodemon
-// npm i uuid
-// const uuid = require('uuid.v1')
-// id: uuid.v1()
