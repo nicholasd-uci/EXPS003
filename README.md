@@ -42,7 +42,7 @@
 
 - Once you have this typed out, you can always refer back to it.
 - Feel free to copy and paste from this repo
-- server.js in EXPS002 => [EXPS002 GitHub Repo](https://github.com/nicholasd-uci/EXPS002)
+- server.js in EXPS002 => [EXPS002 GitHub Repo](https://github.com/nicholasd-uci/EXPS002/blob/master/server.js)
 
 ***Details Line By Line***
 
