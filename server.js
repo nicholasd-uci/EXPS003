@@ -5,7 +5,7 @@ const { join } = require('path')
 // App Function
 const app = express()
 
-//                             Middleware
+//                   Middleware
 // Connects the Front-End entirely 
 app.use(express.static(join(__dirname, 'public')))
 // Allows more in-depth json data
