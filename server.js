@@ -16,7 +16,8 @@ app.get('/items', (req, res) => {
 
 // POST one item
 app.post('/items', (req, res) => {
-
+    items.push(req.body)
+    res.sendStatus(200)
 })
 
 // PUT one item
