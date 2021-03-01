@@ -32,6 +32,8 @@ app.put('/items/:text', (req, res) => {
 
 // DELETE one item
 app.delete('/items/:text', (req, res) => {
+    items = items.filter(item => item.text !== req.params.text)
+    res.sendStatus(200)
 
 })
 
