@@ -1,9 +1,13 @@
 const router = require('express').Router()
-
-let items = []
+const { join } = require('path')
+const fs = require('fs')
 
 // GET all item
 router.get('/items', (req, res) => {
+    fs.readFile(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+        if(err) { console.log(err) }
+        console.log(data)
+    }
     res.json(items)
 })
 
