@@ -21,12 +21,17 @@ app.post('/items', (req, res) => {
 })
 
 // PUT one item
-app.put('/items/:id', (req, res) => {
-
+app.put('/items/:text', (req, res) => {
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].text === req.params.text) {
+            items[i].isDone = req.body.isDone
+        }
+    }
+    res.sendStatus(200)
 })
 
 // DELETE one item
-app.delete('/items/:id', (req, res) => {
+app.delete('/items/:text', (req, res) => {
 
 })
 
