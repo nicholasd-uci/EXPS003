@@ -1,5 +1,5 @@
 // Express & Path
-const express = require('require')
+const express = require('express')
 const { join } = require('path')
 
 // App Function
