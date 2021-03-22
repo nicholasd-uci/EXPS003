@@ -5,7 +5,7 @@ To-Do List application using express and server-side set up. In this repo, we cr
 
 ## Postman - Testing Routes
 
-![]
+![postmanTesting](./video/postmanTesting.gif)
 
 
 ## Source Reference 
