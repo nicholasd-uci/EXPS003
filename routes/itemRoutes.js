@@ -49,9 +49,19 @@ router.put('/items/:text', (req, res) => {
 
 // DELETE one item
 router.delete('/items/:text', (req, res) => {
-    items = items.filter(item => item.text !== req.params.text)
-    res.sendStatus(200)
 
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+        if(err) { console.log(err) }
+
+        let items = JSON.parse(data)
+        items = items.filter(item => item.text !== req.params.text)
+
+        fs.writeFile(join(__dirname, '..', 'db', 'db.json'), JSON.stringify(items), err => {
+            if (err) { console.log(err) }
+
+            res.sendStatus(200)
+        })
+    })
 })
 
 module.exports = router
