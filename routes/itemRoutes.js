@@ -4,27 +4,47 @@ const fs = require('fs')
 
 // GET all item
 router.get('/items', (req, res) => {
-    fs.readFile(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
         if(err) { console.log(err) }
-        console.log(data)
-    }
-    res.json(items)
+        res.json(JSON.parse(data))
+    })
 })
 
 // POST one item
 router.post('/items', (req, res) => {
-    items.push(req.body)
-    res.sendStatus(200)
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+        if(err) { console.log(err) }
+
+        let items = JSON.parse(data)
+        items.push(req.body)
+
+        fs.writeFile(join(__dirname, '..', 'db', 'db.json'), JSON.stringify(items), err => {
+            if (err) { console.log(err) }
+
+            res.sendStatus(200)
+        })
+    })
 })
 
 // PUT one item
 router.put('/items/:text', (req, res) => {
-    for (let i = 0; i < items.length; i++) {
-        if (items[i].text === req.params.text) {
-            items[i].isDone = req.body.isDone
+    fs.readFile(join(__dirname, '..', 'db', 'db.json'), 'utf8', (err, data) => {
+        if(err) { console.log(err) }
+
+        let items = JSON.parse(data)
+
+        for (let i = 0; i < items.length; i++) {
+            if (items[i].text === req.params.text) {
+                items[i].isDone = req.body.isDone
+            }
         }
-    }
-    res.sendStatus(200)
+
+        fs.writeFile(join(__dirname, '..', 'db', 'db.json'), JSON.stringify(items), err => {
+            if (err) { console.log(err) }
+            
+            res.sendStatus(200)
+        })
+    })
 })
 
 // DELETE one item
