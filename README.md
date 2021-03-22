@@ -1,7 +1,11 @@
 # EXPS003
-To-Do List application using express and server-side set up. 
 
+## About
+To-Do List application using express and server-side set up. In this repo, we create a to-do list and testing all of our routes using Postman.
 
+## Postman - Testing Routes
+
+![]
 
 
 ## Source Reference 
@@ -13,7 +17,7 @@ To-Do List application using express and server-side set up.
 
 ## LINKS
 
-- [GitHub Repo Link](https://github.com/nicholasd-uci/EXPS002)
+- [GitHub Repo Link](https://github.com/nicholasd-uci/EXPS003)
 - [Nicholas Dallas's GitHub](https://github.com/nicholasd-uci)
 
 - - -
